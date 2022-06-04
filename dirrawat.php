@@ -240,7 +240,7 @@
                                             <?php
                                                 if(($_SESSION['role']=="administrator")or ($_SESSION['role']=="direktorat keperawatan")){
                                             ?>
-                                            <th width="200">Lakukan_Aksi</th>
+                                            <th width="200">Lakukan_Aksi</th> 
                                             <?php
                                                 }
                                             ?>
