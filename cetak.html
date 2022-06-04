@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mencatatk Laporan</title>
+    <script>
+        function printContent(el){
+            var restorepage = document.body.innerHTML;
+            var printcontent = document.getElementById(el).innerHTML;
+            document.body.innerHTML = printcontent;
+            window.print();
+            document.body.innerHTML = restorepage;
+        }
+    </script>
+      
+</head>
+<body>
+    <h1>JeckyWeb</h1>
+    <div id="div1">JeckyWebPHP</div>
+    <button onClick="printContent('div1')">Print</button>
+
+    <div id="div2">JeckyWeb</div>
+    <button onClick="printContent('div2')">Print</button>
+
+    <p id="p1">Developh Website</p>
+    <button onclick="printContent('p1')">Print</button>
+    
+</body>
+</html>
